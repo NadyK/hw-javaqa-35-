@@ -1,4 +1,6 @@
 package netology.domain;
 
-public class Smartphone {
+public class Smartphone extends Product {
+    private String make;
+
 }
