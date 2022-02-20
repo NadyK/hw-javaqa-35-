@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
+
     @Test
     public void shouldHaveAllFieldsAndMethodFromSuperClass() {
         Book book = new Book();
 //    book.
     }
-
     @Test
     public void shouldCastFromBaseClass() {
         Product product = new Book();
@@ -18,12 +18,6 @@ class BookTest {
             Book book = (Book) product;
 //      book.
         }
-    }
-
-    @Test
-    public void shouldNotCastToDifferentClass() {
-        Product product = new Book();
-        Smartphone phone = (Smartphone) product;
     }
 
     @Test
