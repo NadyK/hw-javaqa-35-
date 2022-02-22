@@ -18,9 +18,17 @@ public class Manager {
     }
 
     public Product[] searchBy(String text) {
-        // ваш код  if (text==name or text==author or text=make)
-        return Product[];
-    }
+            Product[] result = new Product[0];
+            for (Product product: prodactRepository.findAll()){
+                if (matches(product, text)) {
+                    Product[] tmp = new Product[result.length + 1];
+                    System.arraycopy(result , 0, tmp, 0, result.length);
+                    tmp[tmp.length - 1] = product;
+                    result = tmp;
+                }
+            }
+            return result;
+        }
 
     public boolean matches(Product product, String search) {
         if (product instanceof Book) { // если в параметре product лежит объект класса Book
@@ -43,5 +51,6 @@ public class Manager {
             }
             return false;
         }
+    return false;
     }
 }
