@@ -9,6 +9,7 @@ class SmartphoneTest {
     public void shouldHaveAllFieldsAndMethodFromSuperClass() {
         Smartphone phone = new Smartphone();
     }
+
     @Test
     public void shouldCastFromBaseClass() {
         Product product = new Smartphone();
@@ -17,8 +18,6 @@ class SmartphoneTest {
 //      book.
         }
     }
-
-
 
 
 }

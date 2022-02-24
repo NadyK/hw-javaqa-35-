@@ -11,12 +11,13 @@ class BookTest {
         Book book = new Book();
 //    book.
     }
+
     @Test
     public void shouldCastFromBaseClass() {
         Product product = new Book();
         if (product instanceof Book) {
             Book book = (Book) product;
- //       book. ;
+            //       book. ;
         }
     }
 
