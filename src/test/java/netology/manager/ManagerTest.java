@@ -116,9 +116,6 @@ class ManagerTest {
     @Test
     void shouldMatches() {
         Product first = new Smartphone(1, "iPhone-5", 100, "USA");
-        Product second = new Book(2, "Стихи", 1000, "Пушкин");
-        Product third = new Smartphone(3, "iPhone-6", 200, "USA");
-        Product fourth = new Book(4, "Android", 300, "China");
 
         assertTrue(manager.matches(first, "iPhone"));
         assertTrue(manager.matches(first, "iPho"));
